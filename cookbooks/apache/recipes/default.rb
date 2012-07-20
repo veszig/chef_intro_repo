@@ -20,11 +20,9 @@ cookbook_file "/etc/apache2/conf.d/security" do
   source "security"
 end
 
-%w(conf.d/security sites-enabled/000-default).each { |f|
-  file "/etc/apache2/#{f}" do
-    action :delete
-  end
-}
+file "/etc/apache2/sites-enabled/000-default" do
+  action :delete
+end
 
 file "/var/www/index.html" do
   owner "root"
