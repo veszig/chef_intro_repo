@@ -1,0 +1,6 @@
+{
+  "id": "examplecom",
+  "servername": "example.com",
+  "serveralias": "www.example.com",
+  "default_vhost": "true"
+}
