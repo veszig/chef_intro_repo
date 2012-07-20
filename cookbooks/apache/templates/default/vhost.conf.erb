@@ -1,0 +1,11 @@
+<Virtualhost *:80>
+    ServerName <%= @servername %>
+    ServerAlias <%= @serveralias %>
+    DocumentRoot /var/www/<%= @servername %>
+    <Directory "/var/www/<%= @servername %>">
+        Options -Indexes FollowSymLinks MultiViews
+        AllowOverride None
+        Order allow,deny
+        Allow from all
+    </Directory>
+</VirtualHost>

@@ -4,7 +4,8 @@
   "chef_type": "role",
   "json_class": "Chef::Role",
   "run_list": [
-    "recipe[apache]"
+    "recipe[apache]",
+    "recipe[apache::vhosts]"
   ],
   "override_attributes": {
     "apache": {
