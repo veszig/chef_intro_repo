@@ -1,0 +1,9 @@
+{
+  "name": "webserver",
+  "description": "Installs and manages a webserver",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "run_list": [
+    "recipe[apache]"
+  ]
+}

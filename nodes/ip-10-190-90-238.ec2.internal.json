@@ -1,0 +1,8 @@
+{
+  "name": "ip-10-190-90-238.ec2.internal",
+  "chef_type": "node",
+  "json_class": "Chef::Node",
+  "run_list": [
+    "role[webserver]"
+  ]
+}
